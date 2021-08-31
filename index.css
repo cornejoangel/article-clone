@@ -12,8 +12,9 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 8fr 2fr;
-  grid-template-rows: 1fr 200px 200px;
+  grid-template-columns: 800px 1fr;
+  grid-template-rows: 1fr 200px 200px 200px;
+  grid-gap: 20px;
   grid-area: main;
   background-color: cadetblue;
 }
@@ -49,6 +50,35 @@ li {
 
 .sign-in-container {
   display: flex;
+}
+
+article {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.sponsored-content-container {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.article-footer {
+  grid-column: 1;
+  grid-row: 3;
+  display: flex;
+}
+
+.more-from {
+  grid-column: 1 / span 2;
+  grid-row: 4;
+}
+
+.more-from ul {
+  display: flex;
+}
+.sidebar {
+  grid-column: 2;
+  grid-row: 1;
 }
 
 footer {
