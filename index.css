@@ -5,7 +5,9 @@ body {
   grid-template-areas:
     ". header ."
     ". main ."
-    ". footer ."
+    ". footer .";
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 main {
@@ -36,11 +38,12 @@ header {
   display: flex;
 }
 
-.sections ul {
+ul {
   list-style-type: none;
+  padding: 0;
 }
 
-.sections li {
+li {
   display: inline-block;
 }
 
