@@ -1,0 +1,28 @@
+body {
+  display: grid;
+  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-areas:
+    ". header ."
+    ". main ."
+    ". footer ."
+}
+
+main {
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  grid-template-rows: 1fr 200px 200px;
+  grid-area: main;
+  background-color: cadetblue;
+}
+
+header {
+  grid-area: header;
+  background-color: aquamarine;
+}
+
+footer {
+  grid-area: footer;
+  background-color: cornsilk;
+
+}
