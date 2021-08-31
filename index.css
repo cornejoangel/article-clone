@@ -21,6 +21,33 @@ header {
   background-color: aquamarine;
 }
 
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-lists {
+  display: flex;
+}
+
+.sections ul {
+  list-style-type: none;
+}
+
+.sections li {
+  display: inline-block;
+}
+
+.sign-in-container {
+  display: flex;
+}
+
 footer {
   grid-area: footer;
   background-color: cornsilk;
