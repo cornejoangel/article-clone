@@ -15,7 +15,7 @@ body {
 main {
   display: grid;
   grid-template-columns: 800px 1fr;
-  grid-template-rows: 1fr 250px 250px 250px;
+  grid-template-rows: 1fr 250px 250px 450px;
   grid-gap: 20px;
   grid-area: main;
   /* background-color: cadetblue; */
@@ -147,9 +147,65 @@ section {
   grid-row: 4;
 }
 
+.more-from-text {
+  text-transform: uppercase;
+  /* font-weight:bold; */
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
 .more-from ul {
   display: flex;
+  justify-content: space-between;
 }
+
+.more-from li {
+  /* width: 250px; */
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 250px;
+}
+
+.more-from img {
+  width: 100%;
+  grid-row: 1;
+}
+
+.more-from p {
+  font-size: 1.2em;
+  font-weight: bold;
+  grid-row: 2;
+}
+
+.topic-overlay {
+  grid-row: 1;
+  position: absolute;
+  padding: 10px;
+  color: white;
+  background-color: rgb(61, 61, 61);
+  text-transform: uppercase;
+  font-size: .7em;
+  font-weight: bold;
+}
+
+.topic-overlay.second {
+  background-color: #d7df21;
+}
+
+.topic-overlay.third {
+  background-color: #79227d;
+}
+
+.topic-overlay.fourth {
+  background-color: #548293;
+}
+
+.promoted-stories {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: .9em;
+}
+
 .sidebar {
   grid-column: 2;
   grid-row: 1;
