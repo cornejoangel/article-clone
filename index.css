@@ -8,12 +8,14 @@ body {
     ". footer .";
   max-width: 1300px;
   margin: 0 auto;
+  font-size: 16px;
+  font-family: sans-serif;
 }
 
 main {
   display: grid;
   grid-template-columns: 800px 1fr;
-  grid-template-rows: 1fr 200px 200px 200px;
+  grid-template-rows: 1fr 250px 250px 250px;
   grid-gap: 20px;
   grid-area: main;
   background-color: cadetblue;
@@ -57,6 +59,9 @@ article {
   grid-row: 1;
 }
 
+section {
+  font-family: serif;
+}
 .sponsored-content-container {
   grid-column: 1;
   grid-row: 2;
@@ -66,6 +71,47 @@ article {
   grid-column: 1;
   grid-row: 3;
   display: flex;
+  justify-content: space-between;
+}
+
+.issue-ad {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 350;
+}
+
+.issue-ad img {
+  width: 185px;
+  grid-column: 1;
+}
+
+.button-container {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.button-container button {
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 8px;
+}
+
+.button-container :nth-child(1) {
+  background-color: rgb(5, 189, 189);
+}
+
+.button-container :nth-child(2) {
+  background-color: teal;
+}
+
+.button-container :nth-child(3) {
+  background-color: red;
 }
 
 .more-from {
