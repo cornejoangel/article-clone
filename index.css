@@ -8,7 +8,7 @@ body {
     ". footer .";
   max-width: 1300px;
   margin: 0 auto;
-  font-size: 16px;
+  font-size: 18px;
   font-family: sans-serif;
 }
 
@@ -18,7 +18,7 @@ main {
   grid-template-rows: 1fr 250px 250px 250px;
   grid-gap: 20px;
   grid-area: main;
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
 }
 
 header {
@@ -62,9 +62,38 @@ article {
 section {
   font-family: serif;
 }
+
+.banner {
+  background-color: #00b3e5;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px;
+  font-size: 16px;
+}
+
 .sponsored-content-container {
   grid-column: 1;
   grid-row: 2;
+  background-color: rgb(245, 245, 245);
+}
+
+.coffee-content {
+  display: flex;
+  padding: 10px;
+}
+
+.coffee-content p {
+  font-family: serif;
+  font-size: 17px;
+}
+
+.coffee-content h2 {
+  font-size: 24px;
+}
+
+.coffee-content img {
+  width: 270px;
+  margin-right: 10px;
 }
 
 .article-footer {
@@ -78,7 +107,6 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  width: 350;
 }
 
 .issue-ad img {
@@ -103,7 +131,7 @@ section {
 }
 
 .button-container :nth-child(1) {
-  background-color: rgb(5, 189, 189);
+  background-color: #00b3e5;
 }
 
 .button-container :nth-child(2) {
