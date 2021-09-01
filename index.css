@@ -26,6 +26,14 @@ header {
   background-color: aquamarine;
 }
 
+button {
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 8px;
+}
+
 .header-top {
   display: flex;
   justify-content: space-between;
@@ -87,6 +95,16 @@ h1 {
   color: #00b3e5;
 }
 
+.image-description {
+  font-size: 12px;
+}
+
+.image-source {
+  box-sizing: border-box;
+  padding-bottom: 10px;
+  color: #4d4d4d;
+}
+
 article {
   grid-column: 1;
   grid-row: 1;
@@ -94,6 +112,59 @@ article {
 
 section {
   font-family: serif;
+  box-sizing: border-box;
+  margin: 20px 0;
+  font-size: 17px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #4d4d4d;
+  line-height: 1.7em;
+}
+
+section a {
+  color: #00b3e5;
+  text-decoration: none;
+}
+
+.read-more {
+  background-color: rgb(245, 245, 245);
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.read-more a {
+  text-decoration: none;
+  color: #00b3e5;
+}
+
+.reference {
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+strong {
+  font-family: sans-serif;
+}
+
+.newsletter-ad {
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 17px;
+  color: #4d4d4d;
+}
+
+.more-topics {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+}
+
+.more-topics button {
+  background-color: #005587;
 }
 
 .banner {
@@ -153,14 +224,6 @@ section {
   flex-direction: column;
   justify-content: space-between;
   height: 50%;
-}
-
-.button-container button {
-  text-transform: uppercase;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  padding: 8px;
 }
 
 .button-container :nth-child(1) {
