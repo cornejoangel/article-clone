@@ -1,13 +1,12 @@
 body {
   display: grid;
   grid-template-rows: auto auto 10fr 1fr;
-  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-columns: minmax(20px, 1fr) 1120px minmax(20px, 1fr);
   grid-template-areas:
     ". header ."
-    ". nav ."
+    "nav nav nav"
     ". main ."
     ". footer .";
-  max-width: 1300px;
   margin: 0 auto;
   font-size: 18px;
   font-family: sans-serif;
@@ -15,16 +14,14 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 800px 1fr;
+  grid-template-columns: 800px 300px;
   grid-template-rows: 1fr 250px 250px 450px;
   grid-gap: 20px;
   grid-area: main;
-  /* background-color: cadetblue; */
 }
 
 header {
   grid-area: header;
-  background-color: aquamarine;
 }
 
 button {
@@ -40,19 +37,63 @@ button {
   justify-content: space-between;
 }
 
-.sections {
-  display: flex;
+.sections-wrapper {
   grid-area: nav;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  border-bottom: 1px solid black;
+  justify-content: center;
   position: sticky;
   top: 0;
+}
+
+.sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: white;
-  border-bottom: 1px solid black;
+  width: 1120px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  height: 40px
 }
 
 .nav-lists {
   display: flex;
+}
+
+.nav-lists li {
+  margin-right: 10px;
+}
+
+.highlighted {
+  color: #00b3e5;
+  position: relative
+}
+
+.highlighted::after {
+  background-color: #002837;
+  bottom: -12px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  transition: .2s;
+  height: .34375rem;
+}
+
+.nav-more::after {
+  content: "»";
+  display: inline-block;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: 700;
+  margin-left: 10px;
+  transform: rotate(90deg);
+  vertical-align: middle;
+}
+
+.shop-topics {
+  color: #00b3e5;
 }
 
 ul {
@@ -66,6 +107,15 @@ li {
 
 .sign-in-container {
   display: flex;
+}
+
+.sign-in{
+  padding-right: 10px;
+}
+
+svg {
+  height: 1em;
+  width: 1em;
 }
 
 h1 {
