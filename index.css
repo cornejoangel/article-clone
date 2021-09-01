@@ -54,6 +54,39 @@ li {
   display: flex;
 }
 
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.social-links {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.social-links ul {
+  margin: 10px 0;
+}
+
+.article-info {
+  font-size: .9em;
+  line-height: 1.8em;
+  color: rgb(56, 56, 56);
+}
+
+.article-info a{
+  text-decoration: none;
+}
+
+.article-topic {
+  color: black;
+  font-weight: bold;
+}
+
+.author {
+  color: #00b3e5;
+}
+
 article {
   grid-column: 1;
   grid-row: 1;
@@ -160,7 +193,6 @@ section {
 }
 
 .more-from li {
-  /* width: 250px; */
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: 250px;
