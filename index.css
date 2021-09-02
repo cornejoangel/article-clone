@@ -18,6 +18,7 @@ main {
   grid-template-rows: 1fr 250px 250px 450px;
   grid-gap: 20px;
   grid-area: main;
+  margin-top: 20px;
 }
 
 header {
@@ -71,10 +72,12 @@ button {
 .sections-wrapper {
   grid-area: nav;
   display: grid;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #bfbfbf;
   justify-content: center;
   position: sticky;
   top: 0;
+  z-index: 2;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
 }
 
 .sections {
@@ -388,9 +391,64 @@ strong {
   font-size: .9em;
 }
 
-.sidebar {
+.sidebar-wrapper {
   grid-column: 2;
-  grid-row: 1;
+  grid-row: 1 / span 2;
+}
+
+.sidebar {
+  /* grid-column: 2;
+  grid-row: 1 / span 2; */
+  position: sticky;
+  top: 52px;
+  background-color: rgb(245, 245, 245);
+  color: #4d4d4d;
+  height: auto;
+  z-index: 1;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.tabs li {
+  border-top: none;
+  border-right: 3px solid white;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.selected {
+  background-color: #00b3e5;
+  color: white;
+}
+
+.sidebar-list {
+  margin: 0;
+}
+
+.sidebar-list li {
+  border-top: 3px solid white;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-style: 22px;
+  font-weight: bold;
+}
+
+.sidebar-list p {
+  padding-right: 20px;
+}
+
+
+.number {
+  color: #00b3e5;
+  font-size: 40px;
 }
 
 footer {
