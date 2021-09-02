@@ -493,3 +493,29 @@ button[type="submit"] {
   padding: 10px 70px;
   font-size: 16px;
 }
+
+.contact-us {
+  width: 1120px;
+  border-bottom: 1px solid #4d4d4d;
+}
+
+footer ul {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+footer li {
+  font-family: serif;
+  border-right: 1px solid #4d4d4d;
+  padding: 0 10px;
+}
+
+footer li:last-child {
+  border: 0;
+}
+
+.gift-subscriptions {
+  padding: 0;
+}
