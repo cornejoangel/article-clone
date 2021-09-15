@@ -1,8 +1,6 @@
 body {
   display: grid;
-  /*  */
-  grid-template-rows: auto auto 10fr 1fr;
-  /*  */
+  grid-template-rows: repeat(4, auto);
   grid-template-columns: minmax(20px, 1fr) 1120px minmax(20px, 1fr);
   grid-template-areas:
     ". header ."
@@ -17,7 +15,7 @@ body {
 main {
   display: grid;
   grid-template-columns: 800px 300px;
-  grid-template-rows: 1fr 250px 250px 450px;
+  grid-template-rows: auto 250px 250px 450px;
   grid-gap: 20px;
   grid-area: main;
   margin-top: 20px;
@@ -337,7 +335,6 @@ strong {
 
 .more-from-text {
   text-transform: uppercase;
-  /* font-weight:bold; */
   font-size: 1.2em;
   font-weight: lighter;
 }
@@ -399,8 +396,6 @@ strong {
 }
 
 .sidebar {
-  /* grid-column: 2;
-  grid-row: 1 / span 2; */
   position: sticky;
   top: 52px;
   background-color: rgb(245, 245, 245);
