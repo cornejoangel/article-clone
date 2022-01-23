@@ -15,7 +15,7 @@ body {
 main {
   display: grid;
   grid-template-columns: 800px 300px;
-  grid-template-rows: auto 250px 250px 450px;
+  grid-template-rows: auto 250px 450px;
   grid-gap: 20px;
   grid-area: main;
   margin-top: 20px;
@@ -310,7 +310,7 @@ strong {
 
 .article-footer {
   grid-column: 1;
-  grid-row: 3;
+  grid-row: 2;
   display: flex;
   justify-content: space-between;
 }
@@ -348,7 +348,7 @@ strong {
 
 .more-from {
   grid-column: 1 / span 2;
-  grid-row: 4;
+  grid-row: 3;
 }
 
 .more-from-text {
