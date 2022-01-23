@@ -606,3 +606,26 @@ footer li:last-child {
   background-color: #3b5998;
 }
 
+.twitter {
+  background-color: #1da1f2;
+}
+
+.whatsapp {
+  background-color: #4dc247;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.reddit {
+  background-color: #ff5700;
+}
+
+.email-icon {
+  background-color: #999;
+}
+
+.print-icon {
+  background-color: #999;
+}
