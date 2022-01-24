@@ -557,7 +557,7 @@ footer li:last-child {
   font-size: 16px;
   font-weight: lighter;
   margin-bottom: 10px;
-  margin-right: 230px;
+  margin-right: 170px;
   white-space: nowrap;
 }
 
@@ -566,11 +566,11 @@ footer li:last-child {
 }
 
 .footer-links button{
-  background-color: black;
-  height: 32px;
-  font-size: 12px;
   margin-right: 20px;
   display:inline-block;
+  padding: 0;
+  background-color: inherit;
+  margin-left: -15px;
 }
 
 .footer-links ul {
@@ -587,8 +587,9 @@ footer li:last-child {
 .follow-us {
   display: inline-block !important;
   overflow: visible;
-  margin-left: 60px;
+  margin-left: 10px;
   padding: 0;
+  vertical-align: top;
 }
 
 .follow-us li {
@@ -667,4 +668,12 @@ footer li:last-child {
 
 .pinterest {
   background-color: #cb2027;
+}
+
+.app-store img {
+  width: 80%;
+}
+
+.play-store img {
+  width: 108px;
 }
