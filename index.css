@@ -477,6 +477,7 @@ strong {
   font-size: 1.2em;
   font-weight: bold;
   grid-row: 2;
+  margin-top: 10px;
 }
 
 .topic-overlay {
@@ -564,7 +565,9 @@ strong {
   padding-right: 20px;
 }
 
-
+.sidebar-list p:hover {
+  color: #00b3e5;
+}
 
 .number {
   color: #00b3e5;
@@ -796,10 +799,31 @@ footer li:hover {
   opacity: 75%;
 }
 
+.footer-links img {
+  cursor: pointer;
+}
+
 .app-store img {
   width: 80%;
 }
 
 .play-store img {
   width: 108px;
+}
+
+aside {
+  width: fit-content;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 3px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+aside a {
+  color: #00b3e5;
 }
