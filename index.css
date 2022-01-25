@@ -599,6 +599,7 @@ h3 {
 
 form button:hover {
  background-color: #193c5b;
+ cursor: pointer;
 }
 
 label {
@@ -667,6 +668,7 @@ footer li:hover {
 
 .cookies:hover {
   background-color: #288eb7;
+  cursor: pointer;
 }
 
 .footer-links-wrapper{
