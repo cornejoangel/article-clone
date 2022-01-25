@@ -39,10 +39,23 @@ button {
   margin-top: 30px;
 }
 
+.newsletters {
+  width: fit-content;
+}
+
+.newsletters:hover {
+  filter: brightness(70%);
+}
+
+.email-newsletters:hover {
+  text-decoration: underline;
+}
+
 .sign-up {
   display: flex;
   flex-direction: column;
-  width: 230px;
+  min-width: 230px;
+  max-width: 330px;
 }
 
 .sign-up :nth-child(1) {
@@ -67,6 +80,11 @@ button {
   background-color: #00b3e5;
   font-size: 16px;
   padding: 8px 20px;
+  transition: all .2s;
+}
+
+.subscribe-container button:hover {
+  background-color: #008eb6;
 }
 
 .sections-wrapper {
@@ -99,9 +117,41 @@ button {
   margin-right: 10px;
 }
 
+.nav-lists li {
+  position: relative;
+}
+
+.nav-lists li:hover {
+  color: #00b3e5;
+}
+
+.nav-lists li:before {
+  height: 0px;
+  background-color: #002837;
+  bottom: -12px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  transition: .2s;
+  height: 0px;
+}
+
+.nav-lists li:hover::before {
+  height: .34375rem;
+}
+
 .highlighted {
   color: #00b3e5;
   position: relative
+}
+
+.highlighted::before {
+  height: 0px !important;
+}
+
+.highlighted:hover::before {
+  height: 0px !important;
 }
 
 .highlighted::after {
@@ -113,6 +163,10 @@ button {
   right: 0;
   transition: .2s;
   height: .34375rem;
+}
+
+.nav-more {
+  position: relative;
 }
 
 .nav-more::after {
@@ -144,6 +198,12 @@ li {
 
 .sign-in{
   padding-right: 10px;
+}
+
+.sign-in-container div:hover {
+  color: #999;
+  fill: #999;
+  text-decoration: underline;
 }
 
 svg {
