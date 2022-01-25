@@ -456,7 +456,6 @@ strong {
   grid-template-rows: auto auto;
   grid-template-columns: 250px;
   transition: all .2s;
-  overflow: hidden;
 }
 
 .more-from li:hover {
@@ -468,9 +467,14 @@ strong {
   grid-row: 1;
 }
 
-.more-from img:hover {
-  opacity: 90%;
+.img-wrapper {
+  overflow: hidden;
+  height: 166px;
+}
+
+.more-from li:hover .img-wrapper img {
   transform: scale(1.03);
+  opacity: 90%;
 }
 
 .more-from p {
