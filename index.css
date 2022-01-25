@@ -15,7 +15,7 @@ body {
 main {
   display: grid;
   grid-template-columns: 800px 300px;
-  grid-template-rows: auto 250px 450px;
+  grid-template-rows: auto 250px 370px;
   grid-gap: 20px;
   grid-area: main;
   margin-top: 20px;
@@ -243,6 +243,10 @@ h1 {
   box-sizing: border-box;
 }
 
+.social-links li a:hover {
+  opacity: 75%;
+}
+
 .article-info {
   font-size: .9em;
   line-height: 1.8em;
@@ -320,6 +324,11 @@ strong {
   color: #4d4d4d;
 }
 
+.newsletter-ad a {
+  color: #00b3e5;
+  text-decoration: none;
+}
+
 .more-topics {
   font-weight: bold;
   font-size: 16px;
@@ -332,6 +341,10 @@ strong {
 
 .more-topics button {
   background-color: #005587;
+}
+
+.more-topics button:hover {
+  background-color: #288eb7;
 }
 
 .banner {
@@ -383,6 +396,7 @@ strong {
 .issue-ad img {
   width: 185px;
   grid-column: 1;
+  cursor: pointer;
 }
 
 .button-container {
@@ -393,16 +407,32 @@ strong {
   height: 50%;
 }
 
+.button-container button {
+  cursor: pointer;
+}
+
 .button-container :nth-child(1) {
   background-color: #00b3e5;
+}
+
+.button-container :nth-child(1):hover {
+  background-color: #288eb7;
 }
 
 .button-container :nth-child(2) {
   background-color: teal;
 }
 
+.button-container :nth-child(2):hover {
+  background-color: #5f9ea0;
+}
+
 .button-container :nth-child(3) {
   background-color: red;
+}
+
+.button-container :nth-child(3):hover {
+  background-color: #de1d1d;
 }
 
 .more-from {
@@ -425,11 +455,22 @@ strong {
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: 250px;
+  transition: all .2s;
+  overflow: hidden;
+}
+
+.more-from li:hover {
+  color: #00b3e5;
 }
 
 .more-from img {
   width: 100%;
   grid-row: 1;
+}
+
+.more-from img:hover {
+  opacity: 90%;
+  transform: scale(1.03);
 }
 
 .more-from p {
