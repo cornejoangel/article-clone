@@ -536,7 +536,6 @@ strong {
   font-size: 14px;
   font-weight: bold;
   padding: 10px;
-  cursor: pointer;
 }
 
 .tabs li:hover {
@@ -563,12 +562,9 @@ strong {
 
 .sidebar-list p {
   padding-right: 20px;
-  cursor: pointer;
 }
 
-.sidebar-list p:hover {
-  color: #00b3e5;
-}
+
 
 .number {
   color: #00b3e5;
@@ -589,7 +585,9 @@ footer {
 h3 {
   margin: 10px 0;
 }
-form {
+
+form button:hover {
+ background-color: #193c5b;
 }
 
 label {
@@ -634,10 +632,15 @@ footer li {
   font-family: serif;
   border-right: 1px solid #4d4d4d;
   padding: 0 10px;
+  cursor: pointer;
 }
 
 footer li:last-child {
   border: 0;
+}
+
+footer li:hover {
+  color: #00b3e5;
 }
 
 .gift-subscriptions {
@@ -649,6 +652,10 @@ footer li:last-child {
   font-size: 16px;
   display: block;
   margin: 20px auto;
+}
+
+.cookies:hover {
+  background-color: #288eb7;
 }
 
 .footer-links-wrapper{
@@ -735,16 +742,22 @@ footer li:last-child {
 }
 
 .back-to-top {
-  font-weight: bold;
-  font-size: 16px;
   display: flex;
   align-items: center;
+}
+
+.back-to-top p {
+  font: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .back-to-top svg {
   width: 40px;
   height: 40px;
-  padding-left: 20px;
+  margin-left: 20px;
+  cursor: pointer;
 }
 
 .facebook {
@@ -777,6 +790,10 @@ footer li:last-child {
 
 .pinterest {
   background-color: #cb2027;
+}
+
+.follow-us li a:hover {
+  opacity: 75%;
 }
 
 .app-store img {
